@@ -31,14 +31,10 @@ public class AppController {
         }
     }
     public boolean isBasicImplementationSelected(){
-        if(choiceBox.getSelectionModel().getSelectedIndex()==0)
-            return true;
-        return false;
+        return(choiceBox.getSelectionModel().getSelectedIndex()==0)?true:false;
     }
     public boolean isMysqlImplementationSelected(){
-        if(choiceBox.getSelectionModel().getSelectedIndex()==1)
-            return true;
-        return false;
+        return(choiceBox.getSelectionModel().getSelectedIndex()==1)?true:false;
     }
     public void setDisplayLabel(String result){
         this.displayLabel.setText(result);
